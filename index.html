@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поездки</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="wrapper">
+                <p class="header__title">Поездки</p>
+                <a class="header-user" href="#">
+                    <p class="header-user__name">Заболоцкий К.О</p>
+                    <div class="header-user__img">
+                        <img src="./img/vector.svg" alt="Стрелка">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main-add">
+            <div class="container">
+                <div class="wrapper">
+                    <h4 class="main-add__title">Мои поездки</h4>
+                    <button class="main-add__button button"><div class="button__img"><img src="./img/plus.svg" alt="Плюс"></div>Оформить поездку</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-period">
+            <div class="container">
+                <div class="main-period__filter filter">
+                    <div class="wrapper">
+                        <div class="filter-settings">
+                            <label for="date" class="filter-settings__period">Период с:</label>
+                            <div class="filter-settings__date date">
+                                <input class="date__input" type="date" name="" id="date">
+                                <button class="date__delete"><img src="./img/cross.svg" alt="Очистить"></button>
+                                <span class="date__calendar"><img src="./img/date.svg" alt="Календарь"></span>
+                            </div>
+                            <label class="filter-settings__period filter-settings__period--until" for="date_until">по:</label>
+                            <div class="filter-settings__date date">
+                                <input class="date__input" type="date" name="" id="date">
+                                <button class="date__delete"><img src="./img/cross.svg" alt="Очистить"></button>
+                                <span class="date__calendar"><img src="./img/date.svg" alt="Календарь"></span>
+                            </div>
+                            <div class="filter-settings__search search">
+                                <input class="search__input" type="text" placeholder="Поиск...">
+                                <button class="search__btn"><img src="./img/search.svg" alt="Поиск"></button>
+                            </div>
+                            <button class="filter-settings__reset reset"><div class="reset__img"><img src="./img/cross_blue.svg" alt="Крест"></div>Сбросить все</button>
+                        </div>
+                        <div class="filter-archive">
+                            <input class="filter-archive__input" type="checkbox" name="" id="check">
+                            <label class="filter-archive__title" for="check">Показать архивные поездки</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-history">
+            <div class="container">
+                <div class="main-history__table table">
+                    <div class="wrapper">
+                        <div class="table-info">
+                            <div class="table-info__column table-info__column--number column">
+                                <p class="column__title">№ поездки</p>
+                                <span class="column__text">000115</span>
+                            </div>
+                            <div class="table-info__column table-info__column--date column">
+                                <p class="column__title">Дата поездки</p>
+                                <p class="column__text">22.02.2024 - 27.02.2024</p>
+                            </div>
+                            <div class="table-info__column table-info__column--plan column">
+                                <p class="column__title">Сумма, план</p>
+                                <p class="column__text">29 400,00</p>
+                            </div>
+                            <div class="table-info__column table-info__column--fact column">
+                                <p class="column__title">Сумма, факт</p>
+                                <p class="column__text">29 400,00</p>
+                            </div>
+                            <div class="table-info__column table-info__column--city column">
+                                <p class="column__title">Город</p>
+                                <p class="column__text">Москва, Ярославль, Ижевск, Владимир</p>
+                            </div>
+                        </div>
+                        <div class="table-status">
+                            <div class="table-status__column column">
+                                <p class="column__title">Статус</p>
+                                <span class="column__text">Документы</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-history__table table">
+                    <div class="wrapper">
+                        <div class="table-info">
+                            <div class="table-info__column table-info__column--number column">
+                                <p class="column__title">№ поездки</p>
+                                <span class="column__text">000115</span>
+                            </div>
+                            <div class="table-info__column table-info__column--date column">
+                                <p class="column__title">Дата поездки</p>
+                                <p class="column__text">22.02.2024 - 27.02.2024</p>
+                            </div>
+                            <div class="table-info__column table-info__column--plan column">
+                                <p class="column__title">Сумма, план</p>
+                                <p class="column__text">29 400,00</p>
+                            </div>
+                            <div class="table-info__column table-info__column--fact column">
+                                <p class="column__title">Сумма, факт</p>
+                                <p class="column__text">29 400,00</p>
+                            </div>
+                            <div class="table-info__column table-info__column--city column">
+                                <p class="column__title">Город</p>
+                                <p class="column__text">Москва</p>
+                            </div>
+                        </div>
+                        <div class="table-status">
+                            <div class="table-status__column column">
+                                <p class="column__title">Статус</p>
+                                <span class="column__text">Документы</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-history__table table">
+                    <div class="wrapper">
+                        <div class="table-info">
+                            <div class="table-info__column table-info__column--number column">
+                                <p class="column__title">№ поездки</p>
+                                <span class="column__text">000115</span>
+                            </div>
+                            <div class="table-info__column table-info__column--date column">
+                                <p class="column__title">Дата поездки</p>
+                                <p class="column__text">22.02.2024 - 27.02.2024</p>
+                            </div>
+                            <div class="table-info__column table-info__column--plan column">
+                                <p class="column__title">Сумма, план</p>
+                                <p class="column__text">29 400,00</p>
+                            </div>
+                            <div class="table-info__column table-info__column--fact column">
+                                <p class="column__title">Сумма, факт</p>
+                                <p class="column__text">29 400,00</p>
+                            </div>
+                            <div class="table-info__column table-info__column--city column">
+                                <p class="column__title">Город</p>
+                                <div class="column__example">
+                                    <p class="column__text">Кременчуг-Константиновское, Петропавловск-Камчатский, Новосибирск, Волгоград, Саратов</p>
+                                    <div class="column__img">
+                                        <img src="./img/info.svg" alt="Инфо">
+                                        <span class="column__tooltip">Кременчуг-Константиновское, Петропавловск-Камчатский, Новосибирск, Волгоград, Саратов</span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="table-status">
+                            <div class="table-status__column column">
+                                <p class="column__title">Статус</p>
+                                <span class="column__text">Документы</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-history__table table">
+                    <div class="wrapper">
+                        <div class="table-info">
+                            <div class="table-info__column table-info__column--number column">
+                                <p class="column__title">№ поездки</p>
+                                <span class="column__text">000115</span>
+                            </div>
+                            <div class="table-info__column table-info__column--date column">
+                                <p class="column__title">Дата поездки</p>
+                                <p class="column__text">22.02.2024 - 27.02.2024</p>
+                            </div>
+                            <div class="table-info__column table-info__column--plan column">
+                                <p class="column__title">Сумма, план</p>
+                                <p class="column__text">29 400,00</p>
+                            </div>
+                            <div class="table-info__column table-info__column--fact column">
+                                <p class="column__title">Сумма, факт</p>
+                                <p class="column__text">29 400,00</p>
+                            </div>
+                            <div class="table-info__column table-info__column--city column">
+                                <p class="column__title">Город</p>
+                                <p class="column__text">Москва, Ярославль, Ижевск, Владимир</p>
+                            </div>
+                        </div>
+                        <div class="table-status">
+                            <div class="table-status__column column">
+                                <p class="column__title">Статус</p>
+                                <span class="column__text">Документы</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-history__table table">
+                    <div class="wrapper">
+                        <div class="table-info">
+                            <div class="table-info__column table-info__column--number column">
+                                <p class="column__title">№ поездки</p>
+                                <span class="column__text">000115</span>
+                            </div>
+                            <div class="table-info__column table-info__column--date column">
+                                <p class="column__title">Дата поездки</p>
+                                <p class="column__text">22.02.2024 - 27.02.2024</p>
+                            </div>
+                            <div class="table-info__column table-info__column--plan column">
+                                <p class="column__title">Сумма, план</p>
+                                <p class="column__text">29 400,00</p>
+                            </div>
+                            <div class="table-info__column table-info__column--fact column">
+                                <p class="column__title">Сумма, факт</p>
+                                <p class="column__text">29 400,00</p>
+                            </div>
+                            <div class="table-info__column table-info__column--city column">
+                                <p class="column__title">Город</p>
+                                <p class="column__text">Москва, Ярославль, Ижевск, Владимир</p>
+                            </div>
+                        </div>
+                        <div class="table-status">
+                            <div class="table-status__column column">
+                                <p class="column__title">Статус</p>
+                                <span class="column__text">Документы</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-history__table table">
+                    <div class="wrapper">
+                        <div class="table-info">
+                            <div class="table-info__column table-info__column--number column">
+                                <p class="column__title">№ поездки</p>
+                                <span class="column__text">000115</span>
+                            </div>
+                            <div class="table-info__column table-info__column--date column">
+                                <p class="column__title">Дата поездки</p>
+                                <p class="column__text">22.02.2024 - 27.02.2024</p>
+                            </div>
+                            <div class="table-info__column table-info__column--plan column">
+                                <p class="column__title">Сумма, план</p>
+                                <p class="column__text">29 400,00</p>
+                            </div>
+                            <div class="table-info__column table-info__column--fact column">
+                                <p class="column__title">Сумма, факт</p>
+                                <p class="column__text">29 400,00</p>
+                            </div>
+                            <div class="table-info__column table-info__column--city column">
+                                <p class="column__title">Город</p>
+                                <p class="column__text">Москва, Ярославль, Ижевск, Владимир</p>
+                            </div>
+                        </div>
+                        <div class="table-status">
+                            <div class="table-status__column column">
+                                <p class="column__title">Статус</p>
+                                <span class="column__text">Документы</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-history__table table">
+                    <div class="wrapper">
+                        <div class="table-info">
+                            <div class="table-info__column table-info__column--number column">
+                                <p class="column__title">№ поездки</p>
+                                <span class="column__text">000115</span>
+                            </div>
+                            <div class="table-info__column table-info__column--date column">
+                                <p class="column__title">Дата поездки</p>
+                                <p class="column__text">22.02.2024 - 27.02.2024</p>
+                            </div>
+                            <div class="table-info__column table-info__column--plan column">
+                                <p class="column__title">Сумма, план</p>
+                                <p class="column__text">29 400,00</p>
+                            </div>
+                            <div class="table-info__column table-info__column--fact column">
+                                <p class="column__title">Сумма, факт</p>
+                                <p class="column__text">29 400,00</p>
+                            </div>
+                            <div class="table-info__column table-info__column--city column">
+                                <p class="column__title">Город</p>
+                                <p class="column__text">Москва, Ярославль, Ижевск, Владимир</p>
+                            </div>
+                        </div>
+                        <div class="table-status">
+                            <div class="table-status__column column">
+                                <p class="column__title">Статус</p>
+                                <span class="column__text">Документы</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-history__table table">
+                    <div class="wrapper">
+                        <div class="table-info">
+                            <div class="table-info__column table-info__column--number column">
+                                <p class="column__title">№ поездки</p>
+                                <span class="column__text">000115</span>
+                            </div>
+                            <div class="table-info__column table-info__column--date column">
+                                <p class="column__title">Дата поездки</p>
+                                <p class="column__text">22.02.2024 - 27.02.2024</p>
+                            </div>
+                            <div class="table-info__column table-info__column--plan column">
+                                <p class="column__title">Сумма, план</p>
+                                <p class="column__text">29 400,00</p>
+                            </div>
+                            <div class="table-info__column table-info__column--fact column">
+                                <p class="column__title">Сумма, факт</p>
+                                <p class="column__text">29 400,00</p>
+                            </div>
+                            <div class="table-info__column table-info__column--city column">
+                                <p class="column__title">Город</p>
+                                <p class="column__text">Москва, Ярославль, Ижевск, Владимир</p>
+                            </div>
+                        </div>
+                        <div class="table-status">
+                            <div class="table-status__column column">
+                                <p class="column__title">Статус</p>
+                                <span class="column__text">Документы</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-history__table table">
+                    <div class="wrapper">
+                        <div class="table-info">
+                            <div class="table-info__column table-info__column--number column">
+                                <p class="column__title">№ поездки</p>
+                                <span class="column__text">000115</span>
+                            </div>
+                            <div class="table-info__column table-info__column--date column">
+                                <p class="column__title">Дата поездки</p>
+                                <p class="column__text">22.02.2024 - 27.02.2024</p>
+                            </div>
+                            <div class="table-info__column table-info__column--plan column">
+                                <p class="column__title">Сумма, план</p>
+                                <p class="column__text">29 400,00</p>
+                            </div>
+                            <div class="table-info__column table-info__column--fact column">
+                                <p class="column__title">Сумма, факт</p>
+                                <p class="column__text">29 400,00</p>
+                            </div>
+                            <div class="table-info__column table-info__column--city column">
+                                <p class="column__title">Город</p>
+                                <p class="column__text">Москва, Ярославль, Ижевск, Владимир</p>
+                            </div>
+                        </div>
+                        <div class="table-status">
+                            <div class="table-status__column column">
+                                <p class="column__title">Статус</p>
+                                <span class="column__text">Документы</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
